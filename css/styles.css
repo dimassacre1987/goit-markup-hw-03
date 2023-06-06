@@ -46,14 +46,18 @@ ul {
   width: 1158px;
 }
 
+.section {
+  padding: 0 156px;
+}
+
 .header {
-  padding: 24px 156px;
   border-bottom: 1px solid var(--accent);
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
+  padding: 24px 0;
 }
 
 .navigation {
@@ -96,6 +100,7 @@ ul {
 .list {
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 
 .link {
@@ -129,26 +134,30 @@ ul {
 .address-link:focus {
   color: var(--pressed-state);
 }
-.hero {
+.hero-section {
   background-color: var(--dark);
 }
 
 .hero-container {
-  display: block;
-  padding: 188px 472px;
+  padding: 188px 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero-title {
+  width: 496px;
   color: var(--white-background);
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
+  margin: 0 auto;
 }
 
 .hero-button {
-  margin-top: 48px;
+  margin: 48px;
   padding: 16px 32px;
+  border-radius: 4px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -164,6 +173,18 @@ ul {
   background-color: var(--pressed-state);
 }
 
+.second-section-list-item {
+  width: calc((100% - 3 * 24px) / 4);
+}
+
+.item-margin {
+  margin-right: 24px;
+}
+
+.second-section-box {
+  padding: 120px 0;
+}
+
 .second-section-titles {
   color: var(--dark);
   font-size: 20px;
@@ -174,13 +195,23 @@ ul {
 }
 
 .paragraph {
+  margin-top: 8px;
   color: var(--text);
-  font-size: 16;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
+.about-section-list-item {
+  margin-right: 24px;
+}
+
+.about-container {
+  padding-bottom: 120px;
+}
+
 .about {
+  margin-bottom: 72px;
   color: var(--dark);
   font-size: 36px;
   line-height: 1.11;
@@ -193,7 +224,12 @@ ul {
   background-color: var(--light);
 }
 
+.team-container {
+  padding: 120px 0;
+}
+
 .team {
+  margin-bottom: 72px;
   color: var(--dark);
   font-size: 36px;
   line-height: 1.11;
@@ -203,7 +239,15 @@ ul {
 }
 
 .list-background {
+  border-radius: 0 0 4px 4px;
   background-color: var(--white-background);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.teammate-info {
+  padding: 32px;
+  text-align: center;
 }
 
 .footer {
@@ -215,9 +259,34 @@ ul {
 
 .footer-text {
   color: var(--light);
+  width: 264px;
+}
+
+.footer-container {
+  padding-top: 101.5px;
+  padding-bottom: 100px;
+}
+
+/* portfolio */
+
+.portfolio-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.portfolio-buttons {
+  margin: 0 auto 72px;
+  text-align: center;
+}
+
+.portfolio-buttons-item {
+  margin-right: 24px;
 }
 
 .button-filter {
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 12px 24px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -240,4 +309,19 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   list-style: none;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.portfolio-cards-item {
+  margin-bottom: 48px;
+  border: 1px solid var(--accent);
+}
+
+.cards-text {
+  margin: 32px auto 32px 16px;
 }
